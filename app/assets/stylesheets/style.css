@@ -2,7 +2,9 @@ body {
   font-size: 14px;
   color: #333;
   margin: 0 auto;
+  background-color: #f0f0f0;
 }
+
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
   margin: 0;
@@ -14,13 +16,11 @@ ul,li {
 }
 
 
-
-header,
-footer{
+header{
   display: flex;
-  height: 50px;
-  background-color: #f0f0f0;
-  color: #005500;
+  height: 80px;
+  color: #040295;
+  background-color: white;
 }
 
 header{
@@ -43,4 +43,51 @@ header{
 footer {
   margin: 30px auto;
   padding: 10px;
+  color: #040295;
 }
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+  
+}
+
+form input[type="submit"] {
+  background-color: #57C3E9;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #84d3ef;
+}
+
+.container {
+  margin: 50px 50px;
+  padding: 30px 100px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.container h3 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+  
+}
+
