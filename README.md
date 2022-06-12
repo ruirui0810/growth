@@ -30,8 +30,13 @@ Things you may want to cover:
 目標をシェアし、ユーザー同士で目標達成まで応援し合うことができます。
 
 # URL
+https://growth-37335.herokuapp.com/
 
 # テスト用アカウント
+・Basic認証パスワード：08101  
+・Basic認証ID：ruirui1  
+・メールアドレス：  
+・パスワード：  
 
 # 利用方法
 ## 目標投稿
