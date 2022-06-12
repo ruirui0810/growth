@@ -1,5 +1,7 @@
 <div class="wrapper">
   <div class="side">
+    <%= link_to current_user.nickname, edit_user_path(current_user) %>
+
     <%= render "side_profile" %>
   </div>
   <div class="chat_header">

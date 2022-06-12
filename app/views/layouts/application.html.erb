@@ -15,9 +15,13 @@
         <div class="header_bar_left">
           <h2 class="grid-6"><a href="/">Achieve the goal</a></h2>
         </div>
-        <div class="header_bar_right">
-          <a class="post" href="/tweets/new">今日の経験値</a>
-        </div>
+          <% if user_signed_in? %>
+            <div class="header_bar_right">
+              <a class="post" href="/tweets/new">今日の経験値</a>
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            </div>
+          <% end %>
+
       </header>
     <%= yield %>
       <footer>
