@@ -17,7 +17,9 @@
         </div>
         <div class="header_bar_right">
           <a class="post" href="/tweets/new">今日の経験値</a>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'%>
         </div>
+
       </header>
     <%= yield %>
       <footer>
