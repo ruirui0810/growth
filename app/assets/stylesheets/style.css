@@ -104,7 +104,7 @@ div.content_post {  /*投稿内容表示部分*/
   border: 2px solid #57C3E9;
   height: 100px;
   width: 300px;
-  margin: 30px;
+  margin: 30px 30px 5px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -113,6 +113,14 @@ span.name {
   border-bottom: dotted 2px #57C3E9;
 }
 
+.more_list li {
+  display: inline;  /*liを横並びにする*/
+  margin: 10px;
+}
+
+ul.more_list {
+  padding: 0px 250px;
+}
 
 
 
