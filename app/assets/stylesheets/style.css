@@ -1,35 +1,36 @@
-/* メイン */
+/* CSSリセット */
+html,body {
+  height:100%;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
   margin: 0;
 }
-
 ul,li {
   padding: 0;
   margin: 0;
 }
-
-body {
-  font-size: 14px;
-  color: #333;
-  margin: 0 auto;
-  background-color: #f0f0f0;
+.only{
+  width: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 
 /* ヘッダーとフッター */
 
-header{  /*上*/
+header {  /*ヘッダー*/
   display: flex;
   height: 80px;
   color: #040295;
-  background-color: white;
-}
-
-footer {  /*下*/
-  margin: 30px auto;
-  padding: 10px;
-  color: #666;
+  background-color: #f0f0f0;
 }
 
 a {  /*Achieve the goalのとこ*/
@@ -60,9 +61,57 @@ a.post{  /*今日の経験値のとこ*/
   justify-content: space-around;
 }
 
+footer {  /*フッター*/
+  margin: 10px auto;
+  padding: 10px;
+  color: #D8D8D8;
+  background-color: #f0f0f0;
+}
+
+footer p {  /*目標達成応援委員会の部分*/
+  text-align: center;
+}
 
 
+/*メイン画面*/
 
+.side {  /*プロフィール表示部分*/
+  background-color: #EEFFFF;
+  width: 100vw;
+  height: 300px;
+}
+
+.chat_header {  /*経験値一覧の後ろのレイアウト*/
+  height: 50px;
+  background-color: white;
+}
+
+.chat_header h3 {  /*経験値一覧のとこ*/
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+  background-color: #f0f0f0;
+}
+
+.chat {  /*チャット表示部部*/
+  height: calc(100vh - 300px);
+  overflow: scroll;  /*スクロール*/
+}
+
+div.content_post {  /*投稿内容表示部分*/
+  border: 2px solid #57C3E9;
+  height: 100px;
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+span.name {
+  border-bottom: dotted 2px #57C3E9;
+}
 
 
 
@@ -130,3 +179,9 @@ textarea {
   
 }
 
+.form footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
