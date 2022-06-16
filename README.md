@@ -56,6 +56,12 @@ https://growth-37335.herokuapp.com/
 [要件を定義したシート](https://docs.google.com/spreadsheets/d/170-0l4ts1Si19YSKu0SOEHBon6Snat1clVblrroyYUQ/edit?usp=sharing)
 
 # 実装した機能についての画像やGIFおよびその説明
+[![Image from Gyazo](https://i.gyazo.com/fbe3bd6b189877189f3d1168cfb0b3af.gif)](https://gyazo.com/fbe3bd6b189877189f3d1168cfb0b3af)
+ログインするとマイページに入れます。
+
+[![Image from Gyazo](https://i.gyazo.com/eeb01c3243eb1f8bd896ff3f835eaf67.gif)](https://gyazo.com/eeb01c3243eb1f8bd896ff3f835eaf67)
+今日の経験値から投稿ページに飛ぶことができます。
+投稿ページに、今日の成果を入力するとマイページの一番上に表示されます。
 
 # 実装予定機能
 
@@ -66,7 +72,9 @@ https://growth-37335.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/1090d575f9162acd0321b7872d0853b6.png)](https://gyazo.com/1090d575f9162acd0321b7872d0853b6)
 
 # 開発環境
-・フロントエンド HTML CSS  
-・バックエンド ruby on rails javascript  
-・インフラ ruby  
-・テスト ruby
+・フロントエンド HTML CSS javascript  
+・バックエンド Ruby (Ruby on Rails)  
+・開発環境 vscode  
+・テスト Ruby
+
+
