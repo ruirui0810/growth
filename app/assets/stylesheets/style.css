@@ -32,9 +32,12 @@ a {
   *zoom: 1;
 }
 
+
+/* ヘッダー フッター */
+
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
-  padding: 8px 0px;
+  padding: 8px 20px;
   font-size: 14px;
   border: 2px solid #57C3E9;
   color: #57C3E9;
@@ -91,21 +94,36 @@ header.header div.user_nav {
   right: 0;
 }
 
-footer {  /*フッター*/
+footer { 
   margin: 10px auto;
   padding: 10px;
   color: #D8D8D8;
   background-color: #f0f0f0;
 }
 
-footer p {  /*目標達成応援委員会の部分*/
+footer p { 
   text-align: center;
 }
 
 
+/* 完了画面 */
 
+.container {
+  margin: 50px 50px;
+  padding: 30px 100px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);  /*影をつける*/
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 20px;  /*角を丸める */
+}
 
-
+.container h3 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+}
 
 
 
@@ -113,6 +131,23 @@ footer p {  /*目標達成応援委員会の部分*/
 
 
 /*メイン画面*/
+
+div.contents.row .success {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.contents.row .success h3 {
+  margin: 10px auto;
+}
+
+
+
+
 
 .side {  /*プロフィール表示部分*/
   background-color: #EEFFFF;
@@ -163,72 +198,3 @@ ul.more_list {
 
 
 
-/* 投稿、編集画面 */
-.container {
-  margin: 50px 50px;
-  padding: 30px 100px;
-  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);  /*影をつける*/
-  background-color: white;
-  box-sizing: border-box;
-  border-radius: 20px;  /*角を丸める */
-}
-
-.container h3 {
-  margin: 0 0 20px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-  color: #666;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  margin: 5px 0 15px;
-  padding: 10px;
-  border: 1px solid #D8D8D8;
-  border-radius: 5px;
-  font-family: "游ゴシック", "YuGothic";
-  
-}
-
-form input[type="submit"] {
-  background-color: #57C3E9;
-  border-radius: 20px;
-  color: #fff;
-  border: 0;
-  font-size: 18px;
-}
-
-form input[type="submit"]:hover {
-  background-color: #84d3ef;
-}
-
-.container {
-  margin: 50px 50px;
-  padding: 30px 100px;
-  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
-  box-sizing: border-box;
-}
-
-.container h3 {
-  margin: 0 0 20px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-  color: #666;
-}
-
-textarea {
-  height: auto;
-  min-height: 50px;
-  
-}
-
-.form footer {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-}
