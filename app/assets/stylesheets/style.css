@@ -126,7 +126,25 @@ footer p {
 }
 
 
+/* 投稿画面 */
 
+form input,
+form textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  background-color: #57C3E9;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
 
 
 
