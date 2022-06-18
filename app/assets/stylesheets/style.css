@@ -1,130 +1,113 @@
-/* CSSリセット */
-html,body {
-  height:100%;
-}
 body {
-  font-size: 14px;
-  color: #333;
   margin: 0;
-  padding: 0;
-  margin-bottom: 100px;
+  padding-top: 60px;
 }
-h1,h2,h3,h4,h5,h6,p {
-  padding: 10px 0;
+
+body,html {
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+h1,h2,h3,h4,h5,h6,body {
+  line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #666;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
-ul,li {
-  padding: 0;
-  margin: 0;
-}
-.only{
-  width: 100%;
-  position: relative;
-  min-height: 100%;
-}
 
-
-/* ヘッダーとフッター */
-
-header {  /*ヘッダー*/
-  display: flex;
-  height: 80px;
-  color: #040295;
-  background-color: #f0f0f0;
-}
-
-a {  /*Achieve the goalのとこ*/
+a {
   text-decoration: none;
   color: #666;
 }
 
-a.post{  /*今日の経験値のとこ*/
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 660px;
+  *zoom: 1;
+}
+
+
+/* ヘッダー フッター */
+
+.btn,
+header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
   border: 2px solid #57C3E9;
   color: #57C3E9;
   font-weight: bold;
   text-align: center;
-  border-radius: 5px;  /*角を丸める */
+  border-radius: 3px;
   display: inline-block;
 }
 
-.header_bar_left{  /*ヘッドーの右部分*/
-  width: 50%;
-  margin: 10px 30px;
+header,footer {
+  display: block;
 }
 
-.header_bar_right{  /*ヘッドーの左部分*/
-  width: 50%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
+header.header{
+  padding: 6px;
+  border-bottom: 1px solid #D8D8D8;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 50px;
 }
 
-footer {  /*フッター*/
+header.header div.header__bar.row {
+  position: relative;
+}
+
+header.header div.header__bar.row h1.grid-6 {
+  font-size: 20px;
+  line-height: 41px;
+  float: left;
+}
+
+header.header div.header__bar.row h1.grid-6 a {
+  display: block;
+}
+
+header.header div.header__bar.row div.grid-6 {
+  float: right;
+  text-align: right;
+}
+
+header.header div.header__bar.row div.grid-6 .post {
+  width: 120px;
+  display: inline-left;
+  margin-left: 10px;
+}
+
+header.header div.user_nav {
+  position: relative;
+  height: 100px;
+  right: 0;
+}
+
+footer { 
   margin: 10px auto;
   padding: 10px;
   color: #D8D8D8;
   background-color: #f0f0f0;
 }
 
-footer p {  /*目標達成応援委員会の部分*/
+footer p { 
   text-align: center;
 }
 
 
-/*メイン画面*/
+/* 完了画面 */
 
-.side {  /*プロフィール表示部分*/
-  background-color: #EEFFFF;
-  width: 100vw;
-  height: 300px;
-}
-
-.chat_header {  /*経験値一覧の後ろのレイアウト*/
-  height: 50px;
-  background-color: white;
-}
-
-.chat_header h3 {  /*経験値一覧のとこ*/
-  margin: 0 0 20px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-  color: #666;
-  background-color: #f0f0f0;
-}
-
-.chat {  /*チャット表示部部*/
-  height: calc(100vh - 300px);
-  overflow: scroll;  /*スクロール*/
-}
-
-div.content_post {  /*投稿内容表示部分*/
-  border: 2px solid #57C3E9;
-  height: 100px;
-  width: 300px;
-  margin: 30px 30px 5px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-span.name {
-  border-bottom: dotted 2px #57C3E9;
-}
-
-.more_list li {
-  display: inline;  /*liを横並びにする*/
-  margin: 10px;
-}
-
-ul.more_list {
-  padding: 0px 250px;
-}
-
-
-
-/* 投稿、編集画面 */
 .container {
   margin: 50px 50px;
   padding: 30px 100px;
@@ -142,6 +125,9 @@ ul.more_list {
   color: #666;
 }
 
+
+/* 投稿画面 */
+
 form input,
 form textarea {
   width: 100%;
@@ -150,7 +136,6 @@ form textarea {
   border: 1px solid #D8D8D8;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
-  
 }
 
 form input[type="submit"] {
@@ -161,35 +146,53 @@ form input[type="submit"] {
   font-size: 18px;
 }
 
-form input[type="submit"]:hover {
-  background-color: #84d3ef;
+
+/*メイン画面*/
+
+div.side {  /*プロフィール表示部分*/
+  width: 100vw;
+  height: 200px;
 }
 
-.container {
-  margin: 50px 50px;
-  padding: 30px 100px;
-  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
-  box-sizing: border-box;
-}
-
-.container h3 {
-  margin: 0 0 20px;
+div.chat_header h3 {  /*経験値一覧のとこ*/
+  padding: 10px 0px;
   text-align: center;
-  font-weight: normal;
   font-size: 20px;
-  color: #666;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);  /*影をつける*/
+
 }
 
-textarea {
-  height: auto;
-  min-height: 50px;
-  
+
+/*投稿表示画面*/
+
+div.content_post {  /*投稿内容表示部分*/
+  border: 2px solid #57C3E9;
+  height: 150px;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);  /*影をつける*/
 }
 
-.form footer {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+ul.more_list{
+  padding-left: 240px;
+  margin-top: 5px;
 }
+
+ul.more_list li {
+  display: inline;  /*liを横並びにする*/
+}
+
+span.name {
+  background: linear-gradient(transparent 70%, #a8eaff 70%); /*タイトルの下線*/
+}
+
+
+
+
+
+
+
+
